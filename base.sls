@@ -3,6 +3,8 @@
 
 <% archive_areas = 'main' %>
 
+paella_server_ip: 10.0.4.1
+
 apt:
   enable_local_mirror: True
   
@@ -30,3 +32,6 @@ apt:
 
   enable_salt_repository: True
   salt_repository_url: http://paella/debrepos/salt
+
+ssh:
+  hash_known_hosts: no
