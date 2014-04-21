@@ -5,6 +5,12 @@
 
 paella_server_ip: 10.0.4.1
 
+packages:
+  base_admin_tools: True
+  debian_admin_tools: True
+  acpi_packages: True
+
+
 apt:
   enable_local_mirror: True
   
@@ -32,6 +38,11 @@ apt:
 
   enable_salt_repository: True
   salt_repository_url: http://paella/debrepos/salt
+
+  enable_local_paella_mirror: True
+  local_paella_mirror_url: http://paella/debrepos/paella
+  local_paella_mirror_dist: wheezy
+  local_paella_mirror_areas: ${archive_areas}
 
 ssh:
   hash_known_hosts: no
