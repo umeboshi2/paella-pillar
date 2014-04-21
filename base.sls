@@ -27,3 +27,6 @@ apt:
   official_security_mirror_url: http://security.debian.org/
   official_security_mirror_dist: wheezy/updates
   official_security_mirror_areas: ${archive_areas}
+
+  enable_salt_repository: True
+  salt_repository_url: http://paella/debrepos/salt
