@@ -46,3 +46,13 @@ apt:
 
 ssh:
   hash_known_hosts: no
+
+
+server:
+  install_tinyca: True
+  ssh:
+    permit_root_login: no
+    pubkey_authentication: yes
+    permit_empty_passwords: no
+    password_authentication: no
+    use_pam: no
